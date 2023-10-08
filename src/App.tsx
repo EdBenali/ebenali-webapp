@@ -1,17 +1,20 @@
 import './assets/App.css'
+import Footer from './components/Footer.tsx'
+import Header from './components/Header.tsx'
+import Home from './Home.tsx'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App() {
-
   return (
-    <>
-      <header className='testing header'>
-        header  
-      </header>
-      <footer className='testing footer'>
-        footer
-        <a href="https://icons8.com/"> Icons by Icons8 </a>
-      </footer>
-    </>
+    <Router>
+      <Header />
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/projects' element={<Home/>}/>
+          <Route path='/about' element={<Home/>}/>
+        </Routes> 
+      <Footer />
+    </Router>
   )
 }
 

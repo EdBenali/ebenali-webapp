@@ -1,0 +1,13 @@
+.minor-footer-text {
+    color: darkgrey;
+    font-size: 10pt;
+}
+
+.footer {
+    clear: both;
+    position: relative;
+    height: 25px;
+    text-align: center;
+    border-top: gainsboro inset 1px;
+    background-color: #1a1a1a;
+}
