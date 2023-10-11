@@ -72,6 +72,6 @@
   display: block;
   min-height: 99vh;
   margin: 0;
-  background-image: url("/src/assets/brook-in-forest.jpg");
+  background-image: url("/brook-in-forest.jpg");
   background-size: cover;
 }

@@ -12,7 +12,7 @@ function NavBar() {
     return (
         <nav>
             <div className="nav-container">
-                <img src="/src/assets/mascot.png" />
+                <img src="/mascot.png" />
                 <NavButton link='/' title="Home" />
                 <NavButton link='/projects' title="Projects" />
                 <NavButton link='/about' title="About" />
