@@ -1,18 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-import './assets/universal.css'
-import './assets/App.css'
+import './src/assets/universal.css'
 
-import Footer from './components/Footer.tsx'
-import Header from './components/Header.tsx'
-import Home from './Home.tsx'
+import Footer from './src/components/Footer'
+import Header from './src/components/Header'
+import Home from './src/components/Home' 
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Router>
+    <BrowserRouter>
       <Header />
         <Routes>
           <Route path='/' element={<Home/>}/>
@@ -20,6 +19,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           <Route path='/about' element={<Home/>}/>
         </Routes> 
       <Footer />
-    </Router>
+    </BrowserRouter>
   </React.StrictMode>,
 )
