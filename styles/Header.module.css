@@ -7,11 +7,11 @@
     background-color: #1a1a1a;
 }
 
-.nav-container {
+.nav_container {
     display: flex;
 }
 
-.navbar-link {
+.navbar_link {
     padding: 4px;
     margin: 4px;
     color: rgb(133, 76, 161);
