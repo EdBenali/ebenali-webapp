@@ -36,9 +36,10 @@ body {
   margin: 0;
   background-image: url("/brook-in-forest.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .testing {
-  color: tomato;
+  color: red;
   border: red solid 1px;
 }

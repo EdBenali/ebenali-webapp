@@ -1,5 +1,7 @@
-export default function Page() {
+import 'styles/globals.css'
+
+export default function Home() {
   return (
-    <div/>
+      <div className="contents"></div>
   )
 }
