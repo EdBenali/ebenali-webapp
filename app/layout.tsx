@@ -1,6 +1,6 @@
 import Header from './(Header)'
 import Footer from './(Footer)'
-import 'styles/globals.css'
+import './globals.css'
  
 export default function RootLayout({children}: 
   {children: React.ReactNode;}) {
