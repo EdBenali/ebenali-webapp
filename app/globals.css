@@ -30,6 +30,11 @@
   }
   h1 {
     font-size: 24pt;
+    margin-top: 2rem;
+  }
+  h2 {
+    font-size: 18pt;
+    margin-top: 1rem;
   }
   footer {
     display: flex;
@@ -40,6 +45,9 @@
     position: fixed;
     width: 100vw;
     border-bottom: solid 2px black;
+    backdrop-filter: blur(4px);
+    height: 3rem;
+    top: 0;
   }
   html {
     scroll-behavior: smooth;

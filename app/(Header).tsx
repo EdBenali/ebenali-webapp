@@ -1,6 +1,6 @@
 function Header() {
     return (
-         <header className="" >
+         <header>
             <NavBar />  
         </header>
     )
@@ -8,13 +8,16 @@ function Header() {
 
 function NavBar() {
     return (
-        <nav>
-            <div className="flex p-2" >
-                <NavButton link='#about' title="About" />
-                <NavButton link='#projects' title="Projects" />
-                <NavButton link='#contact' title="Contact Me" />
-            </div>
-        </nav>
+        <div>
+            <p className="w-fit float-left p-2 ml-6">
+                Edoardo Benali // Developer
+            </p>
+            <nav className="w-fit float-right translate-y-2 mr-6">
+                    <NavButton link='#about' title="About" />
+                    <NavButton link='#projects' title="Projects" />
+                    <NavButton link='#contact' title="Contact Me" />
+            </nav>
+        </div>
     )
 }
 
@@ -26,7 +29,7 @@ interface NavButtonProps {
 function NavButton ({link, title}: NavButtonProps) {
 
     return (
-        <a className="p-2 hover:underline h-fit" href={link}>{title}</a>
+        <a className="p-2 hover:underline" href={link}>{title}</a>
     )
 }
 

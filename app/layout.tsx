@@ -7,6 +7,7 @@ export default function RootLayout({children}:
   return (
     <html lang="en">
         <head>
+            <meta charSet="utf-8"/>
             <link rel="icon" type="image/ico" href="/favicon.ico" />
             <title>EdoBenali</title>
         </head>
