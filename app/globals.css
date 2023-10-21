@@ -40,6 +40,7 @@
     display: flex;
     margin: 1rem;
     justify-content: center;
+    height: 3vh;
   }
   header {
     position: fixed;
