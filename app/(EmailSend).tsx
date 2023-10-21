@@ -12,14 +12,13 @@ const EmailContactForm = () => {
         emailjs.sendForm('service_zb4kqyx', 'template_0efmt68', e.currentTarget, '_zSus4t4q9DvcJC4N')
             .then((result: any) => {
                 console.log(result.text)
+                
             }, (error: any) => {
                 console.log(error.text)
             });
     };
 
-    // const submitClick = (e: any) => {
-    //     e
-    // }
+
 
     return (
         <form onSubmit={sendEmail}
@@ -44,13 +43,13 @@ const EmailContactForm = () => {
                         className="border-black border-2 p-1 rounded" 
                         required={true} />
             </div>
-            <input className="border-2 border-black rounded bg-white ml-2 w-20 self-center hover:bg-gray-500"
+            <input 
+                id="EmailSubmit"
+                className="border-2 border-black rounded bg-white ml-2 w-20 self-center hover:bg-gray-500 cursor-pointer"
                 type="submit"
-                value="Send"
-                // onClick={submitClick}
-                />
+                value="Send"/>
         </form>
     )
-  }
+}
 
 export default EmailContactForm;

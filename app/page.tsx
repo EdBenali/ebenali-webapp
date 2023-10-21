@@ -9,10 +9,10 @@ let AboutText = {
   SkillsPython: "I work with Python daily and have built up a proficiency with Pandas. \
   Other technlogies that I have used are Auth0, Plotly + Dash, PostgreSQL and Git.",
   SkillsWeb: "My experiance with web development includes the classic HTML & CSS along with \
-  the above mentioned Dash but I have written this app in TypeScript and done the stlying with TailwindCSS.",
+  the above mentioned Dash but I have written this app in TypeScript with Next.js and done the stlying with TailwindCSS.",
 }
 
-const Skills = ["Python", "Pandas", "Plotly/Dash", "HTML & CSS", "PostgreSQL", "TypeScript", "TailwindCSS", "Auth0", "Git"]
+const Skills = ["Python", "Pandas", "Plotly/Dash", "HTML & CSS", "PostgreSQL", "Next.js", "TypeScript", "TailwindCSS", "Auth0", "Git"]
 
 function ListSkills(list: any[]) {
   let Children = [];
