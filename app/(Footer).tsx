@@ -1,13 +1,11 @@
-import 'styles/Footer.module.css'
-import styles from 'styles/Footer.module.css'
+const PhoneNumber = "(+44) 07741 174949"
+const Email = "edoardo.benali@gmail.com"
 
 function Footer() {
     return (
-        <footer className={styles.footer}>
-            <p className={styles.minor_footer_text}> Icons by:
-                <a href="https://icons8.com/" 
-                className="minor_footer_text hyperlink"> Icons8</a>
-            </p>
+        <footer className="justify-between">
+            <p>{PhoneNumber}</p>
+            <p>{Email}</p>
         </footer>
     )
 }

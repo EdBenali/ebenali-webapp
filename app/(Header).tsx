@@ -1,9 +1,6 @@
-import styles from "styles/Header.module.css"
-import 'styles/globals.css'
-
 function Header() {
     return (
-         <header className={styles.header}>
+         <header>
             <NavBar />  
         </header>
     )
@@ -11,14 +8,16 @@ function Header() {
 
 function NavBar() {
     return (
-        <nav>
-            <div className={styles.nav_container}>
-                <img src="/mascot.png" />
-                <NavButton link='/' title="Home" />
-                <NavButton link='/projects' title="Projects" />
-                <NavButton link='/about' title="About" />
-            </div>
-        </nav>
+        <div>
+            <p className="w-fit float-left p-2 ml-6">
+                Edoardo Benali // Developer
+            </p>
+            <nav className="w-fit float-right translate-y-2 mr-6">
+                    <NavButton link='#about' title="About" />
+                    <NavButton link='#projects' title="Projects" />
+                    <NavButton link='#contact' title="Contact Me" />
+            </nav>
+        </div>
     )
 }
 
@@ -30,7 +29,7 @@ interface NavButtonProps {
 function NavButton ({link, title}: NavButtonProps) {
 
     return (
-        <a className={styles.navbar_link} href={link}>{title}</a>
+        <a className="p-2 hover:underline" href={link}>{title}</a>
     )
 }
 
