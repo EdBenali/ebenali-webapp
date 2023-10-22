@@ -44,7 +44,7 @@ function About() {
         <h1>About:</h1>
         <div className="flex row self-center">
           <img
-            className="border-8 border-black rounded-full max-w-[12rem] w-[40vw] drop-shadow-2xl m-6 -z-10 h-fit" 
+            className="border-8 border-black rounded-full max-w-[12rem] w-[40vw] max-h-[12rem] h-[40vw] drop-shadow-2xl m-6 -z-10" 
             src="./square_pp.jpg" 
             alt="Profile Pic" />
           <div className="max-w-[600px]">
