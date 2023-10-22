@@ -74,12 +74,12 @@
   50% {background-color: #A5D6A7}
 }
 
-.success-pulse:active {
-  animation-name: hoverPulse;
+/* .success-pulse:visited {
+  animation-name: clickPulse;
   animation-duration: 3s;
 }
 
 @keyframes clickPulse {
   40% {background-color: #4CAF50}
   90% {background-color: #4CAF50}
-}
+} */
