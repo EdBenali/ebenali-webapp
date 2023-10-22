@@ -10,9 +10,15 @@ let AboutText = {
   Other technlogies that I have used are Auth0, Plotly + Dash, PostgreSQL and Git.",
   SkillsWeb: "My experiance with web development includes the classic HTML & CSS along with \
   the above mentioned Dash but I have written this app in TypeScript with Next.js and done the stlying with TailwindCSS.",
+  Plans: "My current plan for future work is to get a feel for a range of different languages\
+   and platfroms. Rust has very much caught my eye and want to investigate it, I'm interested in \
+   seeing what app development entails with Java, my current role employs ML which had made me keen \
+   to see what more there is in this area and Docker seems to be generally a useful tool for cloud. "
 }
 
-const Skills = ["Python", "Pandas", "Plotly/Dash", "HTML & CSS", "PostgreSQL", "Next.js", "TypeScript", "TailwindCSS", "Auth0", "Git"]
+const haveSkills = ["Python", "Pandas", "Plotly/Dash", "HTML & CSS", "PostgreSQL", "Next.js", "TypeScript", "TailwindCSS", "Git", "GCP"]
+
+const workingSkills = ["ML", "Docker", "Rust", "Java"]
 
 function ListSkills(list: any[]) {
   let Children = [];
@@ -58,9 +64,17 @@ function About() {
           <h2>Web</h2>
           <p className="ml-4">{AboutText.SkillsWeb}</p>
         </div>
-        <div className="flex row max-w-[800px]">
+        <div className="flex flex-col max-w-[800px]">
           <p className="mt-4 w-fit">tldr:</p>
-          {ListSkills(Skills)}
+          {ListSkills(haveSkills)}
+        </div>
+        <div className="max-w-[800px]">
+          <h2>Plans</h2>
+          <p className="ml-4">{AboutText.Plans}</p>
+        </div>
+        <div className="flex flex-col max-w-[800px]">
+          <p className="mt-4 w-fit">Skills I aim to develop:</p>
+          {ListSkills(workingSkills)}
         </div>
       </div>
       <p className="self-center mt-8">
