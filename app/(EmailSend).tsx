@@ -76,7 +76,7 @@ const EmailContactForm = () => {
             </div>
             <input 
                 id="EmailSubmit"
-                className="border-2 border-black rounded bg-white ml-2 w-20 self-center cursor-pointer success-pulse"
+                className="border-2 border-black rounded bg-white ml-2 w-20 self-center cursor-pointer hover:bg-green-300 hover:transition-colors active:bg-green-500"
                 type="submit"
                 onChange={handleButtonSet}
                 value={button}/>
