@@ -24,59 +24,42 @@ function ListSkills(list: any[]) {
         key: i },
         list[i],
       )
-      SubChildren.push(p)
-    if((i + 1) % 5 === 0) {
-      Children.push(
-        React.createElement(
-          "div", 
-          {className: "flex row", key: `${i}-d`}, 
-          SubChildren))
-      SubChildren = []
-    }
-    else if(i === (list.length - 1)){
-      Children.push(
-        React.createElement(
-          "div", 
-          {className: "flex row", key: `${i}-d`}, 
-          SubChildren))
-    }
-      
+      Children.push(p)
   };
-  
   return(
-    <div>{Children}</div>
+    <div className="flex flex-wrap">{Children}</div>
   )
 }
 
 function About() {
   return(
     <div id="about" className="content flex flex-col">
-      <div className="self-center w-[800px]">
+      <div className="self-center max-w-[800px]">
         <h1>About:</h1>
         <div className="flex row self-center">
           <img
-            className="border-8 border-black rounded-full w-[12rem] drop-shadow-2xl m-6 -z-10" 
+            className="border-8 border-black rounded-full max-w-[12rem] w-[40vw] drop-shadow-2xl m-6 -z-10 h-fit" 
             src="./square_pp.jpg" 
             alt="Profile Pic" />
           <div className="max-w-[600px]">
             <h1 className="mt-10">{AboutText.Intro}</h1>
             <p className="text-[24pt]">👁👄👁</p>
-            <p>{AboutText.Bio}</p>
           </div>
         </div>
+            <p>{AboutText.Bio}</p>
       </div>
-      <div className="content-center flex flex-col flex-wrap">
+      <div className="self-center flex flex-col">
         <h2>My skills:</h2>
-        <div className="w-[800px]">
+        <div className="max-w-[800px]">
           <h2>Python</h2>
           <p className="ml-4">{AboutText.SkillsPython}</p>
         </div>
-        <div className="w-[800px]">
+        <div className="max-w-[800px]">
           <h2>Web</h2>
           <p className="ml-4">{AboutText.SkillsWeb}</p>
         </div>
-        <div className="flex row w-[800px]">
-          <p className="mt-4">tldr:</p>
+        <div className="flex row max-w-[800px]">
+          <p className="mt-4 w-fit">tldr:</p>
           {ListSkills(Skills)}
         </div>
       </div>
@@ -92,7 +75,7 @@ function Projects() {
 
   return (
       <div id="projects" className="content flex flex-col">
-        <div className="self-center w-[800px]">
+        <div className="self-center max-w-[800px] w-full">
           <h1>Projects:</h1>
           <p className="m-1">{NoProjects}</p>
         </div>
@@ -116,8 +99,8 @@ function Scocials() {
 
 function Contact() {
   return(
-    <div id="contact" className="content flex flex-col h-[94vh]">
-      <div className="self-center w-[800px]">
+    <div id="contact" className="content flex flex-col h-full">
+      <div className="self-center max-w-[800px] w-full">
         <h1>Contact Me:</h1>
         <EmailContactForm/>
         <Scocials/>

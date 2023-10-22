@@ -9,13 +9,13 @@ function Header() {
 function NavBar() {
     return (
         <div>
-            <p className="w-fit float-left p-2 ml-6">
+            <p className="float-left ml-4 mt-2 max-w-[45vw]">
                 Edoardo Benali // Developer
             </p>
-            <nav className="w-fit float-right translate-y-2 mr-6">
+            <nav className="float-right mr-4 mt-2 max-w-[45vw]">
                     <NavButton link='#about' title="About" />
                     <NavButton link='#projects' title="Projects" />
-                    <NavButton link='#contact' title="Contact Me" />
+                    <NavButton link='#contact' title="Contact" />
             </nav>
         </div>
     )
@@ -29,7 +29,7 @@ interface NavButtonProps {
 function NavButton ({link, title}: NavButtonProps) {
 
     return (
-        <a className="p-2 hover:underline" href={link}>{title}</a>
+        <a className="pr-1 underline hover:text-orange-400 hover:transition-colors active:text-orange-400" href={link}>{title}</a>
     )
 }
 
