@@ -13,6 +13,7 @@ const EmailContactForm = () => {
     const [message, setMessage] = useState('');
     const [email, setEmail] = useState('');
     const [button, setButton] = useState('Send');
+    const [thanks, setThanks] = useState('');
 
     const handleEmailSet = (e:any) => {
         setEmail(e.target.value)
@@ -36,9 +37,7 @@ const EmailContactForm = () => {
                 console.log(result.text)
                 setEmail("")
                 setMessage("")
-                setButton("Sent!")
-                await timeout(3000)
-                setButton("Send")
+                setThanks("Thanks for sending an email, I'll get back to you promptly!")
             }, 
             (error: any) => {
                 console.log(error.text)
@@ -79,7 +78,8 @@ const EmailContactForm = () => {
                 className="border-2 border-black rounded bg-white ml-2 w-20 self-center cursor-pointer hover:bg-green-300 hover:transition-colors active:bg-green-500"
                 type="submit"
                 onChange={handleButtonSet}
-                value={button}/>
+                value='Send'/>
+            <p className='self-center font-bold p-1 mt-2'>{thanks}</p>
         </form>
     )
 }

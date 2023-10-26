@@ -5,7 +5,7 @@ let AboutText = {
   Intro: "Hi I'm Edo!",
   Bio: "I'm a developer based in London, United Kingdom. \
   I'm fairly new to the scene having started 2 years ago, mainly writing in Python.",
-  CheckoutBelow: "Check out what I've done in my spare time below! 👇🏼",
+  CheckoutBelow: "Check out what I've done in my spare time below!",
   SkillsPython: "I work with Python daily and have built up a proficiency with Pandas. \
   Other technlogies that I have used are Auth0, Plotly + Dash, PostgreSQL and Git.",
   SkillsWeb: "My experiance with web development includes the classic HTML & CSS along with \
@@ -44,12 +44,16 @@ function About() {
         <h1>About:</h1>
         <div className="flex row self-center">
           <img
-            className="border-8 border-black rounded-full max-w-[12rem] w-[40vw] max-h-[12rem] h-[40vw] drop-shadow-2xl m-6 -z-10" 
+            className="border-4 border-black rounded-full max-w-[12rem] w-[40vw] max-h-[12rem] h-[40vw] drop-shadow-2xl m-6 -z-10 unround" 
             src="./square_pp.jpg" 
             alt="Profile Pic" />
           <div className="max-w-[600px]">
             <h1 className="mt-10">{AboutText.Intro}</h1>
-            <p className="text-[24pt]">👁👄👁</p>
+            <div className="flex">
+              <p className="text-[24pt] eye-close">👁</p>
+              <p className="text-[24pt] eye-close">👄</p>
+              <p className="text-[24pt] eye-close">👁</p>
+            </div>
           </div>
         </div>
             <p>{AboutText.Bio}</p>

@@ -63,3 +63,23 @@
     border-bottom: solid 2px black;
   }
 }
+
+
+@layer utilities {
+  .eye-close {
+    transition: transform 100ms;
+  }
+
+  .eye-close:hover {
+    transform: scaleY(0.1);
+  }
+
+  .unround{
+    transition: border-radius 500ms;
+    border-radius: 9999px;
+  }
+
+  .unround:hover{
+    border-radius: 2px;
+  }
+}
