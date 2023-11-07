@@ -4,21 +4,20 @@ import EmailContactForm from "./(EmailSend)";
 let AboutText = {
   Intro: "Hi I'm Edo!",
   Bio: "I'm a developer based in London, United Kingdom. \
-  I'm fairly new to the scene having started 2 years ago, mainly writing in Python.",
+  I mainly write in Python, but am branching out into other languages to see whats out there.",
   CheckoutBelow: "Check out what I've done in my spare time below!",
   SkillsPython: "I work with Python daily and have built up a proficiency with Pandas. \
   Other technlogies that I have used are Auth0, Plotly + Dash, PostgreSQL and Git.",
   SkillsWeb: "My experiance with web development includes the classic HTML & CSS along with \
   the above mentioned Dash but I have written this app in TypeScript with Next.js and done the stlying with TailwindCSS.",
-  Plans: "My current plan for future work is to get a feel for a range of different languages\
-   and platfroms. Rust has very much caught my eye and want to investigate it, I'm interested in \
-   seeing what app development entails with Java, my current role employs ML which had made me keen \
-   to see what more there is in this area and Docker seems to be generally a useful tool for cloud. "
+  Plans: "My current ambitions for future projects are to get a feel for a range of different languages\
+   and platfroms. Rust has very much caught my eye and want to investigate it to get a feel for lower level languages and I'm interested in \
+   seeing what app development entails with Java. "
 }
 
 const haveSkills = ["Python", "Pandas", "Plotly/Dash", "HTML & CSS", "PostgreSQL", "Next.js", "TypeScript", "TailwindCSS", "Git", "GCP"]
 
-const workingSkills = ["ML", "Docker", "Rust", "Java"]
+const workingSkills = ["Rust", "Java"]
 
 function ListSkills(list: any[]) {
   let Children = [];
@@ -89,7 +88,7 @@ function About() {
 }
 
 function Projects() {
-  const NoProjects = "Well. This is awkward, not much to see here...yet!";
+  const NoProjects = "Well. This is awkward, not much to see here... yet!";
 
   return (
       <div id="projects" className="content flex flex-col">
