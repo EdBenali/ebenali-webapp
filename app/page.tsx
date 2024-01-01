@@ -116,7 +116,7 @@ function Scocials() {
 
 function Contact() {
   return(
-    <div id="contact" className="content flex flex-col h-full">
+    <div id="contact" className="content flex flex-col">
       <div className="self-center max-w-[800px] w-full">
         <h1>Contact Me:</h1>
         <EmailContactForm/>
