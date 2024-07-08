@@ -1,0 +1,30 @@
+<script src="https://unpkg.com/htmx.org@2.0.0"></script>
+
+
+<html lang="en">
+    <head>
+        <meta charSet="utf-8"/>
+        <link rel="icon" type="image/ico" href="{{ url_for('static', filename='favicon.ico') }}"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+        <title>EdoBenali</title>
+    </head>
+    <body>
+    <header>
+        <p class="float-left ml-4 mt-2 max-w-[45vw]">
+            Edoardo Benali // Developer
+        </p>
+        <nav class="float-right mr-4 mt-2 max-w-[45vw]">
+            <button link='#about' title="About"></button>
+            <button link='#projects' title="Projects"></button>
+            <button link='#contact' title="Contact"></button>
+        </nav>
+    </header>
+    <div id="content">
+        <div></div>
+    </div>
+    <footer>
+            <p>(+44) 7741 174949</p>
+            <p>edoardo.benali@gmail.com</p>
+    </footer>
+</body>
+</html>
